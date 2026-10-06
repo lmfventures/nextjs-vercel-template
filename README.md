@@ -13,7 +13,7 @@ A deliberately small Next.js 16 starter whose value is in its **Vercel configura
 **CLI:**
 
 ```bash
-npx create-next-app@latest my-app --example "https://github.com/<org>/nextjs-vercel-template" --use-pnpm
+npx create-next-app@latest my-app --example "https://github.com/lmfventures/nextjs-vercel-template" --use-pnpm
 ```
 
 Then:
