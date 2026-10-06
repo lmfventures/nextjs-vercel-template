@@ -34,10 +34,10 @@ if [[ -z "$PREV" ]] || ! git cat-file -e "$PREV^{commit}" 2>/dev/null; then
 fi
 
 if git diff --quiet "$PREV" HEAD -- . \
-  ':(exclude)**/*.md' \
-  ':(exclude).github/**' \
-  ':(exclude).vscode/**' \
-  ':(exclude)docs/**' \
+  ':(exclude)*.md' \
+  ':(exclude).github' \
+  ':(exclude).vscode' \
+  ':(exclude)docs' \
   ':(exclude)LICENSE'; then
   echo "🛑 Only docs/meta files changed since $PREV — skipping."
   exit 0
